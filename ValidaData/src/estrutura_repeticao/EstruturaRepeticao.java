@@ -11,10 +11,14 @@ public class EstruturaRepeticao {
 		do {
 			System.out.print("Digite um numero positivo para ser somado ou negativo para sair: ");
 			n1 = scanf.nextInt();
-			soma += n1;
+			
+			if(n1>0) {
+				soma += n1;
+			}
+			
 		}while(n1>0);
 		
-		System.out.println("A soma é: "+(soma-n1));
+		System.out.println("A soma é: "+soma);
 	}
 
 }
